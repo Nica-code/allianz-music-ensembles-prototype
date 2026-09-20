@@ -1,0 +1,6 @@
+allowBuilds:
+  esbuild: true
+overrides:
+  picomatch: 4.0.3
+  postcss: 8.5.6
+  source-map-js: 1.0.2

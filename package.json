@@ -1,0 +1,24 @@
+{
+  "name": "allianz-music-ensembles-prototype",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.19.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && node scripts/prepare-sites-build.mjs",
+    "preview": "vite preview",
+    "test": "node --test --test-isolation=none src/data/siteContent.test.js",
+    "test:sites": "node --test --test-isolation=none tests/sites-worker.test.mjs"
+  },
+  "dependencies": {
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "scheduler": "0.27.0"
+  },
+  "devDependencies": {
+    "picomatch": "4.0.3",
+    "source-map-js": "1.0.2",
+    "vite": "7.1.12"
+  }
+}
