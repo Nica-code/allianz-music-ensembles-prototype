@@ -50,6 +50,18 @@ git push -u origin main
 4. Netlify reads `netlify.toml`; confirm the build command is `npm run build` and the publish directory is `dist/client`.
 5. Choose **Deploy site**. Future GitHub pushes publish automatically.
 
+## Publish with GitHub Pages
+
+The included GitHub Actions workflow builds and publishes the site automatically.
+
+1. Push the repository to GitHub.
+2. Open the repository on GitHub and choose **Settings** → **Pages**.
+3. Under **Build and deployment**, set **Source** to **GitHub Actions**.
+4. Open the repository's **Actions** tab and select **Deploy to GitHub Pages** if the first deployment has not already started.
+5. When the workflow finishes, the site will be available at `https://YOUR-USERNAME.github.io/allianz-music-ensembles-prototype/`.
+
+Every later push to `main` redeploys the site automatically.
+
 ## Publish free with Cloudflare Pages
 
 1. In the [Cloudflare dashboard](https://dash.cloudflare.com/), open **Workers & Pages** and create a Pages project from Git.
